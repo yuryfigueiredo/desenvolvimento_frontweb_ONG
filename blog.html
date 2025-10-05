@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - ONG Renascer</title>
+  <meta name="description" content="Acompanhe novidades, histórias e notícias dos projetos sociais da ONG Renascer.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Hero -->
+    <section class="container hero">
+      <h1>Nosso Blog</h1>
+      <p>Novidades, histórias de impacto e reflexões sobre os temas que nos movem. Fique por dentro!</p>
+    </section>
+
+    <!-- Busca e categorias -->
+    <section class="container">
+      <form role="search" style="margin-bottom:24px;">
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Pesquisar artigos…" 
+          style="width:100%; max-width:400px; padding:10px; border:1px solid #ccc; border-radius:8px;"
+        >
+      </form>
+      <div style="margin-bottom:32px;">
+        <strong>Categorias:</strong>
+        <a href="#" style="margin-right:12px; text-decoration:none; color:var(--primary)">Educação</a>
+        <a href="#" style="margin-right:12px; text-decoration:none; color:var(--primary)">Saúde</a>
+        <a href="#" style="margin-right:12px; text-decoration:none; color:var(--primary)">Meio Ambiente</a>
+        <a href="#" style="text-decoration:none; color:var(--primary)">Voluntariado</a>
+      </div>
+    </section>
+
+    <!-- Lista de posts -->
+    <section class="container">
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <h2>Como a leitura transforma jovens</h2>
+          <p class="muted">15 de setembro de 2025 • Educação</p>
+          <p>Conheça o impacto do nosso projeto de incentivo à leitura em escolas públicas e veja depoimentos inspiradores.</p>
+          <div class="cta">
+            <a class="btn" href="assets/blog/post-leitura.html">Leia mais</a>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <h2>Mutirão de saúde na comunidade</h2>
+          <p class="muted">02 de outubro de 2025 • Saúde</p>
+          <p>Confira como mobilizamos voluntários e profissionais de saúde para atender mais de 500 pessoas em um único dia.</p>
+          <div class="cta">
+            <a class="btn" href="assets/blog/post-saude.html">Leia mais</a>
+          </div>
+        </article>
+
+        <article class="card" role="listitem">
+          <h2>Plantio de mudas no Parque Central</h2>
+          <p class="muted">28 de setembro de 2025 • Meio Ambiente</p>
+          <p>Saiba como envolvemos a comunidade local em uma ação de educação ambiental e plantio de 1.000 mudas.</p>
+          <div class="cta">
+            <a class="btn" href="assets/blog/post-plantio.html">Leia mais</a>
+          </div>
+        </article>
+
+        <!-- Adicione mais posts seguindo o mesmo padrão -->
+      </div>
+    </section>
+
+    <!-- Chamada para inscrição -->
+    <section class="container">
+      <div class="card">
+        <h2>Assine nossa newsletter</h2>
+        <p>Receba em seu e-mail as últimas notícias e convites para eventos e mutirões.</p>
+        <form action="/newsletter" method="post" style="margin-top:16px;">
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Seu e-mail" 
+            required 
+            style="padding:10px; width:100%; max-width:300px; border:1px solid #ccc; border-radius:8px;"
+          >
+          <button type="submit" class="btn" style="margin-top:12px;">Inscrever</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 ONG Renascer. Todos os direitos reservados.</p>
+      <p>
+        <a class="btn" href="voluntariado.html">Seja voluntário</a>
+        <a class="btn btn-secondary" href="doacoes.html">Ajude com uma doação</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

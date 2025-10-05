@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato - ONG Renascer</title>
+  <meta name="description" content="Entre em contato com a ONG Renascer para dúvidas, sugestões ou parcerias.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html" aria-current="page">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Hero -->
+    <section class="container hero">
+      <h1>Fale conosco</h1>
+      <p>Tem dúvidas, sugestões ou quer saber mais sobre a ONG Renascer? Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+    </section>
+
+    <!-- Informações de contato -->
+    <section class="container">
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <h2>Informações de contato</h2>
+          <p><strong>Email:</strong> contato@ongrenascer.org.br</p>
+          <p><strong>Telefone:</strong> (21) 99999-9999</p>
+          <p><strong>Endereço:</strong> Rua das Flores, 123, Niterói – RJ</p>
+        </article>
+        <article class="card" role="listitem">
+          <h2>Horário de atendimento</h2>
+          <p>Segunda a sexta: 09h – 17h</p>
+          <p>Sábado: 09h – 12h</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section class="container">
+      <div class="card">
+        <h2>Envie sua mensagem</h2>
+        <form action="/enviar-contato" method="post" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 ONG Renascer. Todos os direitos reservados.</p>
+      <p>
+        <a class="btn" href="voluntariado.html">Seja voluntário</a>
+        <a class="btn btn-secondary" href="doacoes.html">Ajude com uma doação</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

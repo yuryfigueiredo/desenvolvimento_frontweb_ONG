@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voluntariado - ONG Renascer</title>
+  <meta name="description" content="Participe como voluntário e ajude a ONG Renascer a transformar vidas.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html" aria-current="page">Voluntariado</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Hero -->
+    <section class="container hero">
+      <h1>Voluntariado</h1>
+      <p>Participe dos nossos projetos e ajude a transformar vidas. Escolha sua área de atuação e inscreva-se!</p>
+    </section>
+
+    <!-- Oportunidades -->
+    <section class="container">
+      <h2>Oportunidades de voluntariado</h2>
+      <ul style="padding-left:18px; margin-top:8px;">
+        <li>Educação comunitária</li>
+        <li>Saúde e bem-estar</li>
+        <li>Meio ambiente</li>
+        <li>Eventos e campanhas</li>
+      </ul>
+    </section>
+
+    <!-- Formulário de inscrição -->
+    <section class="container">
+      <div class="card">
+        <h2>Formulário de inscrição</h2>
+        <form action="/enviar-voluntariado" method="post" novalidate>
+          <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input 
+              type="text" 
+              id="cpf" 
+              name="cpf" 
+              required 
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+              placeholder="000.000.000-00"
+            >
+
+            <label for="telefone">Telefone:</label>
+            <input 
+              type="tel" 
+              id="telefone" 
+              name="telefone" 
+              required 
+              placeholder="(00) 00000-0000"
+            >
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Perfil de voluntariado</legend>
+            <label for="area">Área de interesse:</label>
+            <select id="area" name="area" required>
+              <option value="">Selecione</option>
+              <option value="educacao">Educação</option>
+              <option value="saude">Saúde</option>
+              <option value="meio-ambiente">Meio Ambiente</option>
+              <option value="eventos">Eventos</option>
+            </select>
+
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades" name="habilidades" rows="4" required></textarea>
+
+            <label>Disponibilidade:</label>
+            <div>
+              <label><input type="checkbox" name="dias[]" value="segunda"> Segunda</label>
+              <label><input type="checkbox" name="dias[]" value="quarta"> Quarta</label>
+              <label><input type="checkbox" name="dias[]" value="sábado"> Sábado</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Experiência e motivação</legend>
+            <label for="experiencia">Experiência prévia:</label>
+            <textarea id="experiencia" name="experiencia" rows="3"></textarea>
+
+            <label for="motivacao">Por que deseja ser voluntário?</label>
+            <textarea id="motivacao" name="motivacao" rows="3" required></textarea>
+          </fieldset>
+
+          <button type="submit" class="btn">Enviar inscrição</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 ONG Renascer. Todos os direitos reservados.</p>
+      <p>
+        <a class="btn" href="contato.html">Fale conosco</a>
+        <a class="btn btn-secondary" href="doacoes.html">Ajude com uma doação</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
