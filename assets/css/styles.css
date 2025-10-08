@@ -200,3 +200,29 @@ footer a {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
